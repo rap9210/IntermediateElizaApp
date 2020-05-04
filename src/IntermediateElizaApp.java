@@ -41,7 +41,7 @@ public class IntermediateElizaApp {
         while ((!userResponse.equalsIgnoreCase("Q")) && (!userResponse.equalsIgnoreCase("I am feeling great"))) {
             System.out.println("What makes you say " + userResponseRep + "? Enter response here or 'Q' to quit:");
             userResponse = scn.nextLine();
-            userResponse = wordReplace(userResponse);
+            userResponseRep = wordReplace(userResponse);
         }
         //If userResponse is 'I am feeling great' display special message
         if (userResponse.equalsIgnoreCase("I am feeling great")){
